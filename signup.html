@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- tailwind -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- daisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" />
+  <title>Sign Up</title>
+</head>
+<body class="bg-base-200 min-h-screen flex flex-col">
+  <!-- nav bar -->
+  <nav class="navbar bg-base-100 shadow-sm">
+    <div class="flex-1">
+      <a class="text-2xl font-semibold">CampusConnect</a>
+    </div>
+    <div class="flex-none">
+      <input type="text" placeholder="CSE415"
+        class="rounded-xl border p-2 border-gray-200 input-bordered w-24 md:w-64" />
+    </div>
+    <div class="flex-1 justify-end flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="index.html">Home</a></li>
+        <li><a>Notes</a></li>
+        <li><a>Questions</a></li>
+        <li>
+          <details>
+            <summary>Upload</summary>
+            <ul class="bg-base-100 rounded-t-none p-2">
+              <li><a>Note</a></li>
+              <li><a>Question</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <main class="flex-grow flex items-center justify-center">
+    <div class="max-w-md w-full bg-base-100 p-8 shadow-md rounded-lg mt-8">
+      <h2 class="text-2xl font-bold mb-6 text-center">Sign Up</h2>
+      <form class="space-y-4">
+        <div>
+          <label class="block mb-1">First Name</label>
+          <input type="text" placeholder="First name" class="input input-bordered min-w-full" />
+        </div>
+        <div>
+          <label class="block mb-1">Last Name</label>
+          <input type="text" placeholder="Last name" class="input input-bordered min-w-full" />
+        </div>
+        <div>
+          <label class="block mb-1">Email</label>
+          <input type="email" placeholder="johnwick@diu.edu.bd" class="input input-bordered min-w-full" />
+        </div>
+        <div>
+          <label class="block mb-1">Department</label>
+          <input type="text" placeholder="CSE, EEE, BBA" class="input input-bordered  min-w-full" />
+        </div>
+        <div>
+          <label class="block mb-1 w-full">Password</label>
+          <input type="password" placeholder="********" class="input input-bordered min-w-full" />
+        </div>
+        <div>
+          <label class="block mb-1">Confirm Password</label>
+          <input type="password" placeholder="********" class="input input-bordered min-w-full" />
+        </div>
+        <button class="btn btn-primary w-full">Sign Up</button>
+      </form>
+    </div>
+  </main>
+
+    <footer
+      class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4"
+    >
+      <aside>
+        <p>Copyright © - All right reserved by CampusConnect team</p>
+      </aside>
+    </footer>
+</body>
+</html>
